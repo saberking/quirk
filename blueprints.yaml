@@ -1,0 +1,18 @@
+name: Quirk
+slug: quirk
+type: theme
+version: 0.1.0
+description: as described
+icon: rebel
+author:
+  name: Saber King
+  email: saberking321@protonmail.com
+homepage: https://github.com/saber-king/grav-theme-quirk
+demo: http://demo.yoursite.com
+keywords: grav, theme, etc
+bugs: https://github.com/saber-king/grav-theme-quirk/issues
+readme: https://github.com/saber-king/grav-theme-quirk/blob/develop/README.md
+license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.6.0' }
