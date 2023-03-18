@@ -40,6 +40,12 @@ a:hover {
     100% {left: -400%; }
 }
 
+@media (max-width: 799px) {
+    div#slider{
+        height: 300px !important;
+    }
+}
+
 div#slider {
     width: 100%;
     overflow: hidden;
