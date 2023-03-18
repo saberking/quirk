@@ -9,4 +9,13 @@ h1, h2, h3, h4, h5, h6 {
 
 #header {
     background-color: #332266;
+    color: #cceeee
+}
+
+#header a {
+    color: #cceeee
+}
+
+.title {
+    font-size: 20pt;
 }
