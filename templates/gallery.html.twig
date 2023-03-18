@@ -1,0 +1,14 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+    {{ page.content|raw }}
+
+    <ul>
+    {% for image in page.find('/images').media %}
+        <span class="image-surround">
+            {{ image.cropResize(600,400).html|raw }}
+        </span>
+    {% endfor %}
+    </ul>
+
+{% endblock %}
