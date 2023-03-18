@@ -14,10 +14,18 @@ h1, h2, h3, h4, h5, h6 {
 
 #header a {
     color: #cceeee
+
 }
 
 .title {
     font-size: 20pt;
+    display: flex;
+    flex-direction: horizontal;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #3385ee !important   ;
 }
 
 @keyframes slidy {
@@ -34,14 +42,12 @@ h1, h2, h3, h4, h5, h6 {
 
 div#slider {
     width: 100%;
-    display: flexbox;
     overflow: hidden;
     height: 600px;
     flex-direction: row;
 }
 div#slider figure img { width: 20%; float: left; display: flex; vertical-align: center}
 div#slider figure {
-    display: flexbox;
     position: relative;
     width: 500%;
     margin: 0;

@@ -44,8 +44,7 @@
             <section class="container {{ grid_size }}">
                 <nav class="navbar">
                     <section class="navbar-section logo">
-                        {% include 'partials/logo.html.twig' %}
-                        <span class="title">Mantra</span>
+                        <a class="title" href="/"> {% include 'partials/logo.html.twig' %} {{ config.site.title_short }}</a>
                     </section>
                     <section class="navbar-section desktop-menu">
 
