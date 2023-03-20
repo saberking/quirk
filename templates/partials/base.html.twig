@@ -95,9 +95,10 @@
     {% block mobile %}
     <div class="mobile-container">
         <div class="overlay" id="overlay">
-            <div class="mobile-logo">
+            <a class="mobile-logo" href="/">
                 {% include 'partials/logo.html.twig' with {mobile: true} %}
-            </div>
+                <span class="title-text">{{ config.site.title_short }}</span>
+            </a>
             <nav class="overlay-menu">
                 {% include 'partials/navigation.html.twig' with {tree: true} %}
             </nav>

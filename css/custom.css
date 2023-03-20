@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header.scrolled .title{
-    font-size: 12pt;
+    font-size: 14pt;
     vertical-align: center;
 }
 
@@ -46,20 +46,29 @@ a:hover {
     100% {left: -400%; }
 }
 
+.title-text{
+    vertical-align: center;
+    padding-top: 5px;
+    transition: all 0.5s ease;
+}
+
 @media (max-width: 799px) {
     div#slider{
         height: 300px !important;
     }
-    #header .title{
+    #header .title, .title-text{
         font-size: 14pt;
+    }
+    .title-text{
+        padding-top: 10px;
+    }
+    #header.scrolled .title .title-text{
+        font-size: 12pt;
         vertical-align: center;
+        padding-top: 5px;
     }
 }
 
-.title-text{
-    vertical-align: center;
-    padding-top: 5px;
-}
 
 div#slider {
     width: 100%;
