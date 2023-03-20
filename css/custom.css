@@ -18,9 +18,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .title {
-    font-size: 20pt;
+    font-size: 21pt;
     display: flex;
     flex-direction: horizontal;
+    transition: all 0.5s ease;
+}
+
+#header.scrolled .title{
+    font-size: 12pt;
+    vertical-align: center;
 }
 
 a:hover {
@@ -44,6 +50,15 @@ a:hover {
     div#slider{
         height: 300px !important;
     }
+    #header .title{
+        font-size: 14pt;
+        vertical-align: center;
+    }
+}
+
+.title-text{
+    vertical-align: center;
+    padding-top: 5px;
 }
 
 div#slider {
