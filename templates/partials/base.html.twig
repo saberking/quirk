@@ -110,5 +110,6 @@
     {{ assets.js('bottom')|raw }}
 {% endblock %}
 
+{% include 'partials/footer.html.twig' with {'page': page.find(page.header.footer.content)} %}
 </body>
 </html>
