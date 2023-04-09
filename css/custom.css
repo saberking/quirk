@@ -67,6 +67,12 @@ a:hover {
         vertical-align: center;
         padding-top: 5px;
     }
+    div.footer{
+        flex-direction: column !important;
+    }
+    div.mapcontainer{
+        height: 220px;
+    }
 }
 
 
@@ -83,4 +89,28 @@ div#slider figure {
     margin: 0;
     left: 0;
     animation: 30s slidy infinite;
+}
+
+div.footer{
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #555555;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    background-color: #332719;
+}
+div.address{
+    padding: 12px;
+}
+div.address>h4{
+    margin-top: 12px;
+}
+div.mapcontainer{
+    flex-grow: 10;
+    align-self: stretch;
+}
+div#map{
+    height: 100%;
+    width: 100%;
 }

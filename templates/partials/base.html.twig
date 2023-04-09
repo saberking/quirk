@@ -15,6 +15,12 @@
 
     <link rel="icon" type="image/png" href="{{ url('page://images/favicon.png') }}" />
     <link rel="canonical" href="{{ page.url(true, true) }}" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+    crossorigin=""></script>
 {% endblock head %}
 
 {% block stylesheets %}
@@ -30,6 +36,7 @@
     {% do assets.addJs('jquery', 101) %}
     {% do assets.addJs('theme://js/jquery.treemenu.js', {group:'bottom'}) %}
     {% do assets.addJs('theme://js/site.js', {group:'bottom'}) %}
+    {% do assets.addJs('theme://js/map.js', {group:'bottom'}) %}
 {% endblock %}
 
 {% block assets deferred %}
@@ -81,17 +88,13 @@
                         {% include 'partials/messages.html.twig' ignore missing %}
                     {% endblock %}
                     {{ block('content_surround') }}
+                {% include 'partials/footer.html.twig' with {'address': page.find(page.header.footer.address) } %}
                 </section>
             </section>
         {% endblock %}
         </section>
-
     </div>
-{#
-    {% block footer %}
-        {% include 'partials/footer.html.twig' %}
-    {% endblock %}
-#}
+
     {% block mobile %}
     <div class="mobile-container">
         <div class="overlay" id="overlay">
@@ -110,6 +113,5 @@
     {{ assets.js('bottom')|raw }}
 {% endblock %}
 
-{% include 'partials/footer.html.twig' with {'page': page.find(page.header.footer.content)} %}
 </body>
 </html>
