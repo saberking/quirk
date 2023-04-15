@@ -1,8 +1,13 @@
 <div class="footer">
-    <div class="address">
-        {{ address.content|raw }}
+    <div class="footercontentcontainer">
+        <div class="address">
+            {{ address.content|raw }}
+        </div>
+        <div class="mapcontainer">
+            <div id="map"></div>
+        </div>
     </div>
-    <div class="mapcontainer">
-         <div id="map"></div>
+    <div id="coverguardcontainer">
+        <img id="coverguardimage" src="user/pages/images/coverguard.png" height="100px" width="50px"/>
     </div>
 </div>

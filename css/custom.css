@@ -92,13 +92,20 @@ div#slider figure {
 }
 
 div.footer{
-    border-style: solid;
-    border-radius: 5px;
-    border-color: #555555;
+    overflow: visible;
+    position: relative;
+}
+div.footercontentcontainer{
     display: flex;
     flex-direction: row;
     justify-content: stretch;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #555555;
     background-color: #332719;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
 }
 div.address{
     padding: 12px;
@@ -113,4 +120,17 @@ div.mapcontainer{
 div#map{
     height: 100%;
     width: 100%;
+}
+div#coverguardcontainer{
+    width:100%;
+    height: 100px; 
+    overflow: visible;
+    z-index: 100;
+}
+img#coverguardimage{
+    height:100px;
+    width: 50px;
+    right: 170px;
+    position: absolute;
+    z-index: 100;
 }

@@ -3,7 +3,6 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy<a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
-console.log(document.body.getAttribute("data-root"));
 var marker = L.icon({
     iconUrl: 'user/pages/images/logo.png',
     shadowUrl: 'user/pages/images/logo-shadow.png',
@@ -15,3 +14,6 @@ var marker = L.icon({
     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
 L.marker([53.39308, -1.42495], {icon: marker}).addTo(map);
+var height=$(".footercontentcontainer").height();
+$("#coverguardimage").css("top", (height-27).toString()+"px");
+console.log(height);
