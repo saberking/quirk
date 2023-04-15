@@ -67,11 +67,14 @@ a:hover {
         vertical-align: center;
         padding-top: 5px;
     }
-    div.footer{
+    div.footercontentcontainer{
         flex-direction: column !important;
     }
     div.mapcontainer{
         height: 220px;
+    }
+    img#coverguardimage{
+        right: 135px !important;
     }
 }
 
