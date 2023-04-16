@@ -67,7 +67,7 @@ a:hover {
 
 @media (max-width: 799px) {
     div.slider{
-        height: 300px !important;
+        height: 400px !important;
     }
     #header .title, .title-text{
         font-size: 14pt;
@@ -91,6 +91,11 @@ a:hover {
     }
 }
 @media (max-width: 500px) {
+    div.slider{
+        height: 300px !important;
+    }
+}   
+@media (max-width: 400px) {
     div.slider{
         height: 250px !important;
     }
