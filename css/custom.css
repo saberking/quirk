@@ -94,10 +94,12 @@ a:hover {
     div.slider{
         height: 250px !important;
     }
-}
+}   
 
 div.slider {
     width: 100%;
+    max-width: 1000px;
+    margin: auto;
     overflow: hidden;
     height: 600px;
     flex-direction: row;
