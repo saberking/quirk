@@ -4,7 +4,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #aaaaaa;
+    color: #dddddd;
 }
 
 #header {
@@ -17,6 +17,19 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+h1 a:link, h2 a:link, h3 a:link, h4 a:link{
+    color: white;
+    text-decoration: none !important;
+}
+
+h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited{
+    color: #bbbbbb;
+    text-decoration: none !important;
+}
+
+h1 a:active, h2 a:active, h3 a:active, h4 a:active{
+    text-decoration: none !important;
+}
 .title {
     font-size: 21pt;
     display: flex;
@@ -53,7 +66,7 @@ a:hover {
 }
 
 @media (max-width: 799px) {
-    div#slider{
+    div.slider{
         height: 300px !important;
     }
     #header .title, .title-text{
@@ -77,16 +90,20 @@ a:hover {
         right: 135px !important;
     }
 }
+@media (max-width: 500px) {
+    div.slider{
+        height: 250px !important;
+    }
+}
 
-
-div#slider {
+div.slider {
     width: 100%;
     overflow: hidden;
     height: 600px;
     flex-direction: row;
 }
-div#slider figure img { width: 20%; float: left; display: flex; vertical-align: center}
-div#slider figure {
+div.slider figure img { width: 20%; float: left; display: flex; vertical-align: center}
+div.slider figure {
     position: relative;
     width: 500%;
     margin: 0;
