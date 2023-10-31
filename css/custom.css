@@ -89,6 +89,9 @@ a:hover {
     img#coverguardimage{
         right: 135px !important;
     }
+    #companynumbercontainer{
+	margin-top:380px !important;
+    }
 }
 @media (max-width: 500px) {
     div.slider{
