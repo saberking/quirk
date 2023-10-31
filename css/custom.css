@@ -161,3 +161,7 @@ img#coverguardimage{
     position: absolute;
     z-index: 100;
 }
+
+#companynumbercontainer{
+	margin-top:150px;
+}
